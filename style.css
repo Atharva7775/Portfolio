@@ -704,3 +704,39 @@ flex-direction: row;
 .volunteerwork{
   margin-top: 70%;/* padding: 20%; */
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .projectcardsmain
+
+  {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+
+
+  }
+
+  .projectcards
+  {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    
+  }
+  .maincontainer{
+    position: relative;
+    width: 350px;
+    height: 520px;
+    top: 300px;
+    left: 180px;
+    background: none;
+    margin: 10px;
+  
+    transform: translate(-50%, -50%);
+   
+  
+  }
+  
+}
