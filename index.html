@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">ATHARVA BAPAT</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#volunteer">Volunteer Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ATHARVA BAPAT</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#volunteer" onclick="toggleMenu()">Volunteer Work</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class = "new_img" src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Atharva Bapat</h1>
+        <p class="section__text__p2">Graduate Student at UNC Charlotte</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/Atharva Bapat - Software Engineer - Resume copy.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/atharva-bapat-40a7171b5/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <!-- <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              /> -->
+              <!-- <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div> -->
+          <div class="text-container">
+            <p>
+              As an ambitious and dynamic Computer Science Master's student at the University of North Carolina Charlotte, 
+              I am passionate about crafting innovative solutions through technology. Bringing a wealth of technical proficiency, I offer a robust skill set in Java, Python, and backend development, nurtured through impactful roles at Theoremlabs.io and Persistent Systems. My commitment to innovation is evident in projects like Veg Non-Veg Food Classification and E-commerce Website Development. Beyond coding, my passion for photography and road trips reflects my creative mindset and ability to find inspiration in diverse experiences, adding a unique perspective to collaborative endeavors.
+              Eager to contribute my skills and drive for excellence to a forward-thinking team. Let's shape the future together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="Education">
+      <h1 class="title">Education</h1>
+      <div class="timeline">
+        <div class="container-left">
+          <img class="section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+          <div class="textbox">
+            <h2>UNIVERSITY OF NORTH CAROLINA AT CHARLOTTE</h2>
+            <small>2022 - 2024</small>
+            <br>
+            <small>GPA - 3.88/4.00</small>
+            <p>Embarking on a transformative academic journey, I am currently pursuing a Master's Degree in Computer Science at the University of North Carolina Charlotte. Since August 2022, I have delved into an enriching curriculum, consistently maintaining a stellar GPA of 3.88 out of 4.00. This phase of my education not only 
+              emphasizes theoretical understanding but also encourages hands-on application through diverse projects, 
+              reinforcing my proficiency in a wide array of programming languages and cutting-edge technologies. Throughout my Master's program, I have gained invaluable insights and practical experience in Agile Systems, Parallel Computing, 
+              Software Development methodologies, Machine Learning, and Data Science. This multifaceted approach to learning has not only enhanced my academic journey but has also positioned me as a versatile and 
+              adept contributor in the ever-evolving field of computer science.</p>
+             <!-- <button onclick="expandContent(this)"class="expand-button">Expand</button>
+            <div class="moreInfo chart-container" style="display: none;">
+              Hidden content goes here 
+              <p>These are the skills that I honed during my Master's Degree and on the x-axis are the levels indicating my expertise.</p>
+              <canvas id="skillsPieChart" width="100" height="100"></canvas> 
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
+      <div class="timeline">
+        <div class="container-left">
+          <img class="section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+          <div class="textbox">
+            <h2>SAVITRIBAI PHULE PUNE UNIVERSITY</h2>
+            <small>2018 - 2022</small>
+            <br>
+            <small>GPA - 3.65/4.00</small>
+            <p>My undergraduate years at Savitribai Phule Pune University laid the cornerstone for my academic and professional journey. From August 2018 to June 2022, I pursued a Bachelor's Degree in Computer Engineering, achieving a commendable GPA of 3.65 out of 4.00. This foundational period equipped me with a comprehensive skill set, including expertise in Java, Python, C++, C#, HTML5, CSS, and JavaScript. It also provided fertile ground for honing practical skills through projects, 
+              setting the stage for my subsequent ventures into the professional realm.</p>
+            <br>
+            <br>
+           
+            <p>These academic milestones collectively underscore my commitment to continuous learning, innovative thinking, and the seamless integration of theoretical knowledge into real-world applications.
+            </p>
+            <!-- Button must be outside the hidden content div -->
+            <!-- <button onclick="expandContent(this)"class="expand-button">Expand</button>
+            <div class="moreInfo" style="display: none;">
+              Hidden content goes here -->
+              <!-- <p>These are the skills that I honed during my Master's Degree and on the x-axis are the levels indicating my expertise.</p> -->
+            </div> 
+          </div>
+        </div>
+      
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="experience">
+    <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+    <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Persistent Systems</h2>
+            <div class="article-container">
+              <p>exp details asdas sw Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, unde sit deserunt quidem ex, nobis totam fugiat soluta eius autem, aperiam recusandae eaque est quam debitis blanditiis laboriosam! Beatae, vero!</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Theoremlabs.io</h2>
+            <div class="article-container">
+              <p>exp about theoremlabs.io  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur dignissimos laudantium quia! Provident praesentium, autem reiciendis maxime perferendis quos deleniti repudiandae earum sit optio laborum? Soluta animi saepe ipsum.</p>
+            </div>
+          </div>
+          <div class="details-container1">
+            <h2 class="experience-sub-title">Riskpro</h2>
+            <div class="article-container">
+              <p>exp about Riskpro Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error et in, debitis, ipsa numquam molestias quis voluptate labore eum doloremque molestiae quas repudiandae tenetur aspernatur sint. Esse, doloribus iusto!</p>
+            </div>
+          </div>
+          <div class="details-container1">
+            <h2 class="experience-sub-title">UNC CHARLOTTE</h2>
+            <div class="article-container">
+              <p>exp about UNC CHARLOTTE. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, commodi excepturi, unde sunt doloremque aut blanditiis exercitationem deserunt tempore sit nesciunt numquam, quibusdam et nam alias molestias in inventore! Tempora?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> -->
+    <div class="timeline">
+      <div class="container-left">
+        <img class= "section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+        <div class="textbox">
+          <h2>Theoremlabs.io | Charlotte, North Carolina, USA </h2>
+          <small>Software Developer Intern, |  </small>
+          <small>December 2023 - PRESENT</small>
+          <p>In my current role at Theoremlabs.io, a dynamic fintech startup, I am at the forefront of driving backend development. Utilizing tools such as Postman, VS Code, JIRA, and Java, I actively contribute to constructing and testing APIs for our innovative Saas product. Engaging collaboratively within a team, the team that has 3 Co-founders with more than 15 years experience in USA market.
+            I participate in daily stand-up calls, ensuring the seamless flow of tasks within the JIRA pipeline. Currently, my focus lies in enhancing database security through token creation and incorporating over 20 functionalities to our web page, 
+           showcasing my commitment to delivering robust and secure software solutions.</p>    
+        </div>
+      </div>
+    </div>
+     <div class="timeline">
+      <div class="container-right">
+        <img class= "section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+        <div class="textbox">
+          <h2>Persistent Systems | Pune, India</h2>
+          <small>Software Developer Intern, |  </small>
+          <small>JAN 2022 - JUNE 2022</small>
+          <p>During my internship at Persistent Systems, I immersed myself in the Cloud Computing team, gaining hands-on experience with file storage systems using Amazon S3. I collaborated in a dynamic learning environment where my manager mentored me in the practical implementation of cloud computing concepts. My responsibilities extended to writing SQL queries in AWS, focusing on query optimization strategies, 
+            and contributing to the design and deployment of impactful cloud-based solutions.</p>  
+          </div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="container-left">
+        <img class= "section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+        <div class="textbox">
+          <h2>Riskpro Management and Consulting Pvt. Ltd | Pune, India </h2>
+          <small>Web Developer Intern, |  </small>
+          <small>JAN 2021 - MARCH 2021</small>
+          <p>As a Web Developer Intern at Riskpro Management, I streamlined the online exam portal using .NET, C#, and MVC, resulting in a remarkable 35% reduction in data retrieval times. Simultaneously, I orchestrated the organization's database using Microsoft SQL Server 2008, implementing advanced queries for insightful analytics. My innovation extended to the development of a customer-centric Chatbot for the official site, 
+            leveraging Zoho's cloud-based CRM and Deluge scripting, showcasing my versatility in web development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="projectcardsmain">
+      <div class="projectcards">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+                 <h1>Veg Non-Veg Food Classification</h1>
+                  <small>DECEMBER 2023</small>
+                  <div class="bullet-points">
+                    <ul>
+                      <li>Led a cutting-edge project sponsored by UNC Charlotte for advanced food classification using University Dining images.</li>
+                      <li>Implemented manual labeling and data augmentation techniques for robust model training and accuracy.</li>
+                      <li>Utilized diverse pre-trained models (Inception V3, VGG16, ResNet50, MobileNet V2) and custom CNN+BiLSTM models.</li>
+                      <li>Optimized models with Adam optimizer, achieving high accuracy and practical real-time food classification.</li>
+                      <li>Showcased project impact through a user-friendly Streamlit app providing practical menu recommendations.</li>
+                    </ul>
+                    <h2 class="bottom">Look Back</h2>
+                  </div>
+                  
+                </div>
+                
+              <div class="theback">
+                <h1>TOOLS USED</h1>
+                <div class="logotable">
+                  <ul>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/pyhton.jpeg" alt="LOGO" ></li>
+                    <h2 class="backside-desc">Python</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/ML.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Machine Learning Models</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/Streamlit.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Streamlit</h2>
+                  </ul>
+                </div>
+                </div>
+              
+            
+          </div>
+        </div>
+
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <h1>Sales and Marketing Performance Dashboard through Tableau</h1>
+              <small>APRIL 2023</small>
+              <div class="bullet-points">
+                <ul>
+                  <li>Extracted sales data from external sources such as Kaggle, compiling a robust dataset for in-depth analysis.</li>
+                  <li>Conducted meticulous data processing, addressing inconsistencies and ensuring data accuracy and reliability.</li>
+                  <li>Utilized the power of Tableau to create visually intuitive dashboards that provided a holistic view of sales trends, regional variations, and product performance.</li>
+                  <li>The dashboard facilitated easy interpretation of complex data, empowering stakeholders to make informed decisions promptly.
+                  </li>
+                </ul>
+                <h2 class="bottom">Look Back</h2>
+              </div>  
+            </div>
+              <div class="theback">
+                <h1>TOOLS USED</h1>
+                <div class="logotable">
+                  <ul>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/pyhton.jpeg" alt="LOGO" ></li>
+                    <h2 class="backside-desc">Python</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/Tableau.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Tableau</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/kaggle.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Kaggle</h2>
+                  </ul>
+                </div>   
+              </div>
+              
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projectcards">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <h1>Neural Human Radiance Field from a Single Video </h1>
+              <small>JANUARY 2023</small>
+              <div class="bullet-points">
+                <ul>
+                  <li>This innovative project focused on training a Neural Network to capture images depicting novel poses from a video source. The generated images were then input into a video-generating algorithm developed in Python.</li>
+                  <li>A sophisticated user interface was crafted to showcase and demonstrate the results. Leveraging a local tunnel, the website hosted a video output illustrating a human performing novel poses.</li>
+                  
+                </ul>
+                <h2 class="bottom">Look Back</h2>
+              </div>    
+            </div>
+              <div class="theback">
+                <h1>TOOLS USED</h1>
+                <div class="logotable">
+                  <ul>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/pyhton.jpeg" alt="LOGO" ></li>
+                    <h2 class="backside-desc">Python</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/ML.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Machine Learning Models</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/Lt.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Local Tunnel</h2>
+                  </ul>
+                </div>       
+              </div>
+              
+            
+          </div>
+        </div>
+
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <h1>E-commerce Website Development </h1>
+              <small>MARCH 2021</small>
+              <div class="bullet-points">
+                <ul>
+                  <li>At the helm of this comprehensive project, I led the development of an e-commerce website utilizing Angular, Terraform, and Java integrations. The outcome was a remarkable 30% performance boost and 20% faster page loads.</li>
+                  <li>Agile practices were seamlessly integrated, and a robust CI/CD pipeline was established, optimizing development cycles and increasing efficiency by an impressive 50%.</li>
+                  
+                </ul>
+                <h2 class="bottom">Look Back</h2>
+              </div>    
+            </div>
+              <div class="theback">
+                <h1>TOOLS USED</h1>
+                <div class="logotable">
+                  <ul>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/java.png" alt="LOGO" ></li>
+                    <h2 class="backside-desc">Java</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/Angular.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Angular</h2>
+                    <li><img class="section__pic-container2" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/Agile.png" alt="LOGO"></li>
+                    <h2 class="backside-desc">Agile methodologies</h2>
+                  </ul>
+                </div>       
+              </div>
+              
+            
+          </div>
+        </div>
+      </div>
+   
+
+     
+    
+
+       
+
+        
+      
+
+    </div>
+        
+
+      <!-- <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Veg Non-Veg Food Classification</h2>
+            <ul>
+              <li>Sponsored by UNC Charlotte, this project uses images from University Dining, employing manual labeling and data augmentation techniques for robust model training.</li>
+              <li>Employed diverse pre-trained models (Inception V3, VGG16, ResNet50, MobileNet V2) and custom CNN and CNN+BiLSTM models.</li>
+              <li>Optimized models with Adam optimizer, 0.001 learning rate, binary cross-entropy loss, and accuracy tracking.</li>
+              <li>Showcased project impact through a user-friendly Streamlit app for real-time food classification, offering practical menu recommendations.</li>
+            </ul>
+            
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sales and Marketing Performance Dashboard through Tableau</h2>
+            <ul>
+              <li>Extracted sales data from external sources like Kaggle to create a comprehensive dataset for analysis.</li>
+              <li>Processed the data, and organized the sales data, addressing inconsistencies values, ensuring it was ready for analysis.</li>
+              <li>Leveraged Tableau to create visually intuitive dashboards, providing actionable insights into sales trends, regional variations, and product performance for informed decision-making.</li>
+            </ul>
+            </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Neural Human Radiance Field from a Single Video</h2>
+            <ul>
+              <li>The Neural Network was trained to capture the images as novel poses from the video input.</li>
+              <li>Further, the images were given as input to our video generating algorithm developed in Python.</li>
+              <li>Developed a user interface to showcase and demonstrate, and used the local tunnel to host the website. As a result, we get a video output of a human performing novel poses.</li>
+            </ul>
+            
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-commerce Website Development </h2>
+            <ul>
+              <li>Spearheaded e-commerce website development using Angular, Terraform, and Java integrations, achieving a 30% performance boost, 20% faster page loads.</li>
+              <li>Used Agile practices and set up a CI/CD pipeline, optimizing development cycles with a 50% efficiency increase.</li>
+            </ul>
+            
+            
+          </div>
+        </div>
+      </div> -->
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+    <section id="volunteer">
+      <!-- <p class="volunteer-class-1">Have a look at my</p> -->
+      <h1 class="Volunteertitle">Volunteer Work.</h1>
+      <div class="volunteerwork">
+        <img class="section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+      
+        <h2>International Student Advisory Council (ISAC) Board Member:</h2>
+        <small>AUGUST 2023 - PRESENT</small>
+        <p>As a dedicated board member at ISAC, I take pride in supporting and enhancing the experiences of international students. In this role, I provide valuable guidance to students facing various challenges and contribute to the organization of engaging events, 
+          fostering a vibrant and inclusive community for our international student body.</p>
+          <br>
+          <br>
+          <br>
+          <img class="section__pic-container1" src="/Users/atharvabapat/Downloads/html-css-js-portfolio-tutorial-2-main/assets/profile-pic.png" alt="LOGO">
+      
+          <h2>Instructional Assistant at UNCC</h2>
+          <small>AUGUST 2022 - PRESENT</small>
+            <p>I serve as an Instructional Assistant under the mentorship of Prof Ayman Hajja at UNCC, specializing in C language and basic programming. In this dynamic position, 
+              I play a crucial role in resolving students' doubts, grading assignments, and facilitating a conducive learning environment for undergraduates. It's a privilege to assist students in mastering the fundamental concepts of programming, nurturing their academic growth.
+
+            </p>
+          </h2>
+     
+        </div>
+
+
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">bapat.atharva9@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/atharva-bapat-40a7171b5/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#volunteer" onclick="toggleMenu()">Volunteer Work</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Atharva Bapat. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
